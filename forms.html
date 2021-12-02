@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="new.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <h1 id="signup">Registration form</h1>
+    </fieldset>
+    <form>
+        <fieldset>
+            <legend><h1>Details</h1></legend>
+        <label id="uname">Username:</label>
+        <!-- text box-->
+      <input type="text"
+        id="uname" 
+        placeholder="please enter username" 
+        maxlength="10" required max="40">
+        <br>
+        <label id="pword">Password:</label>
+        <input type="password"
+        id="pword"
+        placeholder="please enter password" 
+        maxlength="10" required
+        >
+        <br>
+        <label id="dob">Date of Birth</label>
+        <input type="date" id="dob">
+        <br>
+       <label>date Time</label>
+       <input type="datetime-local">
+       <br>
+       <label>Select the Range</label>
+       <input type="range" min="0" max="25">
+       <br>
+       <input type="file">
+       <br>
+       <input type="radio" value="agree" id="rb" name="agreement">
+       <label id="rb">Agree</label>
+       <input type="radio" value="agree" id="rb" name="agreement" checked>
+       <label id="rb">Disagree</label>
+       <br>
+       <input type="checkbox" value="HTML" name="tech" >
+       <label > HTML </label>
+       <input type="checkbox" value="CSS" name="tech">
+       <label > CSS </label>
+       <input type="checkbox" value="JS" name="tech" checked>
+       <label > JS </label>
+       <br>
+    </fieldset>
+    <fieldset>
+        <label>Comments:</label>
+        <textarea ></textarea>
+        <br>
+        <select >
+            <option>--Select an option --</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      
+            <input list="datalistitems" required>
+            <datalist id="datalistitems">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JS</option>
+            </datalist>  
+    </fieldset>
+       <input type="submit" value="signin" >
+        <input type="reset" value="clear">
+        <!--button-->
+        <button>OK</button>
+        <button><a href="https://www.gmail.com">click for gmail</a></button>
+    </form>
+</body>
+</html>
